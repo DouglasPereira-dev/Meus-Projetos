@@ -171,6 +171,155 @@ flex-wrap: wrap;
 .whatsapp-link {
     color: white;
 }
+
+#faq {
+    background-color: #f4f4f4; /* Fundo suave */
+    padding: 40px 20px; 
+    text-align: center;
+}
+
+#faq h2 {
+    color: #2c3e50; /* Azul escuro */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+}
+
+.faq-item {
+    background: white; /* Fundo branco para as perguntas */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 10px 0;
+    overflow: hidden; /* Para ocultar conteúdo em expansão */
+    transition: transform 0.3s ease; /* Efeito de transição */
+}
+
+.faq-item:hover {
+    transform: translateY(-5px); /* Levanta a caixa ao passar o mouse */
+}
+
+.faq-question {
+    padding: 15px; /* Espaçamento interno */
+    cursor: pointer; /* Mão ao passar o mouse */
+    font-size: 1.2rem;
+    background-color: #2c3e50; /* Azul escuro para o título */
+    color: white; /* Texto branco */
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none; /* Escondido inicialmente */
+    background-color: #ecf0f1; /* Fundo claro para resposta */
+    color: #34495e; /* Cinza escuro */
+}
+#faq {
+    background-image: url('images/dúvidasfaq.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Cobre toda a seção */
+    background-position: center; /* Centraliza a imagem */
+}
+
+
+
+/* Estilo da seção de vendas do pack */
+#pack-venda {
+    background-color: #f9f9f9; /* Fundo claro */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pack-container {
+    background-color: #fff; /* Fundo branco */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o container */
+}
+
+#pack-venda h2 {
+    font-size: 2.5rem;
+    color: #333; /* Título em cinza escuro */
+    margin-bottom: 20px;
+}
+
+#pack-venda p {
+    font-size: 1.2rem;
+    color: #666; /* Texto descritivo em cinza */
+    margin-bottom: 20px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.price-old {
+    font-size: 1.5rem;
+    color: #999; /* Preço antigo em cinza claro */
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.price-new {
+    font-size: 2rem;
+    color: #ff4b2b; /* Vermelho chamativo para o preço promocional */
+    font-weight: bold;
+}
+
+.buy-now {
+    background-color: #ff4b2b; /* Botão vermelho chamativo */
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #e04424; /* Vermelho mais escuro no hover */
+}
+
+.limited-offer {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #ff4b2b;
+    font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .pack-container {
+        padding: 20px;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-old {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .price-new {
+        font-size: 1.8rem;
+    }
+
+    .buy-now {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
 #about {
     padding: 3rem 0;
     background-color: #1c1c1c;

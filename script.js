@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Função para o cronômetro
-const countdownDate = new Date("Oct 17, 2024 23:59:59").getTime();
+const countdownDate = new Date("Oct 12, 2024 23:59:59").getTime();
 
 const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
@@ -45,3 +45,10 @@ const countdownFunction = setInterval(function () {
         document.getElementById("timer").innerHTML = "Promoção Expirada";
     }
 }, 1000);
+
+/*trem do menu burguer*/
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('active');
+});
+
